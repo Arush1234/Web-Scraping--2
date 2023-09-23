@@ -6,7 +6,6 @@ url = 'https://en.wikipedia.org/wiki/List_of_brown_dwarfs'
 
 page = requests.get(url)
 print(page)
-
 soup = bs(page.text,'html.parser')
 
 star_table = soup.find_all('table')
